@@ -84,6 +84,10 @@ The integration script creates uniquely named test accounts, exercises auth, soc
 
 Production cookies use `HttpOnly`, `Secure`, and `SameSite=None`; state-changing API calls also check request origins. Socket.IO accepts only authenticated sessions and assigns users to server-controlled private rooms.
 
+## Project demonstration video
+
+[Watch the TrekTogether project demonstration](https://drive.google.com/file/d/1tnz0qnC-hKZUgtPNCQ5GbCRpbVwe03Qk/view?usp=drivesdk).
+
 ## Project structure
 
 ```text
