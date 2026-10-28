@@ -1,6 +1,7 @@
 services:
   - type: web
     name: trektogether-api
+    plan: free
     runtime: node
     rootDir: backend
     buildCommand: npm ci
