@@ -1,0 +1,2 @@
+import mongoose from 'mongoose'
+const schema=new mongoose.Schema({group:{type:mongoose.Schema.Types.ObjectId,ref:'Group',required:true},inviter:{type:mongoose.Schema.Types.ObjectId,ref:'User',required:true},invitee:{type:mongoose.Schema.Types.ObjectId,ref:'User',required:true},status:{type:String,enum:['pending','accepted','declined'],default:'pending'}},{timestamps:true});schema.index({group:1,invitee:1},{unique:true});export default mongoose.model('GroupInvitation',schema)
